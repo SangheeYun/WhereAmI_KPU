@@ -9,21 +9,19 @@
 import UIKit
 import MapKit
 import CoreLocation
+import AVFoundation // tts 라이브러리
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController{
 
     @IBOutlet weak var mapView: MKMapView!
-    var locationManager: CLLocationManager!
+    @IBOutlet weak var currentLocText: UILabel!
+    var locationManager: LocationManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
-        locationManager.startUpdatingLocation()
-        mapView.showsUserLocation = true
+        
+        locationManager = LocationManager(mapView: mapView, currentLocText: currentLocText)
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,18 +29,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let location = locations.last
-        // 위치정보 반환
-        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
-
-        // MKCoordinateSpan -- 지도 scale
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta:0.01, longitudeDelta:0.01))
- 
-        self.mapView.setRegion(region, animated: true)
-        if let coor = manager.location?.coordinate{
-            NSLog(String(coor.latitude)+" "+String(coor.longitude)+"\n")
-        }
+    @IBAction func currentLocSpeck(_ sender: UIButton) { // 현재위치말하기 처리
+        TTSModule.speak(text: currentLocText.text!)
     }
 }
 
