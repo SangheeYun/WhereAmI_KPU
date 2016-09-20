@@ -31,6 +31,7 @@ class ViewController: UIViewController{
     
     @IBAction func currentLocSpeck(_ sender: UIButton) { // 현재위치말하기 처리
         TTSModule.speak(text: currentLocText.text!)
+        print(currentLocText.text!)
     }
 }
 
