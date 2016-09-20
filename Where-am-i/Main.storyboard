@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Where_am_i" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pqO-LL-2uh"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jm7-3X-C0i">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEb-se-3Uc">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="7lf-Tw-Rlx"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="CurrentLocSpeak"/>
+                                        <connections>
+                                            <action selector="currentLocSpeck:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gkx-ip-yLp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="N1T-QN-ejv"/>
+                                    <constraint firstAttribute="bottom" secondItem="zEb-se-3Uc" secondAttribute="bottom" id="YBB-Si-fv3"/>
+                                    <constraint firstItem="zEb-se-3Uc" firstAttribute="leading" secondItem="Jm7-3X-C0i" secondAttribute="leading" id="hGj-cR-eXK"/>
+                                    <constraint firstItem="zEb-se-3Uc" firstAttribute="top" secondItem="Jm7-3X-C0i" secondAttribute="top" id="q2D-CA-GWO"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재위치" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEz-Yf-Ngs">
+                                <color key="backgroundColor" red="0.82804319371727753" green="0.82804319371727753" blue="0.82804319371727753" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DEz-Yf-Ngs" secondAttribute="trailing" id="AWv-s5-ijJ"/>
+                            <constraint firstItem="pqO-LL-2uh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Bhq-0g-AuW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pqO-LL-2uh" secondAttribute="trailing" id="DQZ-Sc-0g2"/>
+                            <constraint firstAttribute="bottom" secondItem="pqO-LL-2uh" secondAttribute="bottom" id="HRg-yi-Unp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pqO-LL-2uh" secondAttribute="bottom" id="Phh-YX-JI5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jm7-3X-C0i" secondAttribute="trailing" id="Qwy-F3-l6C"/>
+                            <constraint firstItem="DEz-Yf-Ngs" firstAttribute="top" secondItem="pqO-LL-2uh" secondAttribute="top" id="Xcq-Ew-zCL"/>
+                            <constraint firstItem="pqO-LL-2uh" firstAttribute="top" secondItem="Jm7-3X-C0i" secondAttribute="bottom" id="cbg-6K-8kq"/>
+                            <constraint firstItem="Jm7-3X-C0i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pIq-Hb-IZF"/>
+                            <constraint firstItem="DEz-Yf-Ngs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uYx-ax-L7u"/>
+                            <constraint firstItem="Jm7-3X-C0i" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="zL8-aG-PjF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentLocText" destination="DEz-Yf-Ngs" id="AFF-Es-LSO"/>
+                        <outlet property="mapView" destination="pqO-LL-2uh" id="5Y4-9p-Pv7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CurrentLocSpeak" width="250" height="250"/>
+    </resources>
+</document>
