@@ -14,6 +14,7 @@
 		C9251DAB1D803C8200339B47 /* Where_am_iUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9251DAA1D803C8200339B47 /* Where_am_iUITests.swift */; };
 		C9251DBA1D8044D600339B47 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9251DB91D8044D600339B47 /* MapKit.framework */; };
 		C9251DBC1D8044DF00339B47 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9251DBB1D8044DF00339B47 /* CoreLocation.framework */; };
+		C98D4B521D9104C00071676C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D4B511D9104C00071676C /* AVFoundation.framework */; };
 		C98D753C1D8FD19500BC4C35 /* TTSModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D753B1D8FD19500BC4C35 /* TTSModule.swift */; };
 		C9A0ADE11D8FD38700E36AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0ADE01D8FD38700E36AAC /* Main.storyboard */; };
 		C9A0ADE31D8FD39A00E36AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0ADE21D8FD39A00E36AAC /* LaunchScreen.storyboard */; };
@@ -51,6 +52,7 @@
 		C9251DAC1D803C8200339B47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9251DB91D8044D600339B47 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C9251DBB1D8044DF00339B47 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C98D4B511D9104C00071676C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C98D753B1D8FD19500BC4C35 /* TTSModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTSModule.swift; sourceTree = "<group>"; };
 		C9A0ADE01D8FD38700E36AAC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C9A0ADE21D8FD39A00E36AAC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98D4B521D9104C00071676C /* AVFoundation.framework in Frameworks */,
 				C9251DBC1D8044DF00339B47 /* CoreLocation.framework in Frameworks */,
 				C9251DBA1D8044D600339B47 /* MapKit.framework in Frameworks */,
 			);
@@ -141,6 +144,7 @@
 		C9251DB81D8044D500339B47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C98D4B511D9104C00071676C /* AVFoundation.framework */,
 				C9251DBB1D8044DF00339B47 /* CoreLocation.framework */,
 				C9251DB91D8044D600339B47 /* MapKit.framework */,
 			);
