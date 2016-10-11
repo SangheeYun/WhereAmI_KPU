@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C90BE1211DAD4D2300BE47D3 /* LocListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90BE1201DAD4D2300BE47D3 /* LocListController.swift */; };
 		C9251D8B1D803C8200339B47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9251D8A1D803C8200339B47 /* AppDelegate.swift */; };
 		C9251D8D1D803C8200339B47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9251D8C1D803C8200339B47 /* ViewController.swift */; };
 		C9251D921D803C8200339B47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9251D911D803C8200339B47 /* Assets.xcassets */; };
@@ -21,6 +20,7 @@
 		C98D753C1D8FD19500BC4C35 /* TTSModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D753B1D8FD19500BC4C35 /* TTSModule.swift */; };
 		C9A0ADE11D8FD38700E36AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0ADE01D8FD38700E36AAC /* Main.storyboard */; };
 		C9A0ADE31D8FD39A00E36AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0ADE21D8FD39A00E36AAC /* LaunchScreen.storyboard */; };
+		C9AD7D2A1DAD53F80045A5EE /* LocListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AD7D291DAD53F80045A5EE /* LocListController.swift */; };
 		C9DBCD361D868ABE0045F32A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DBCD351D868ABE0045F32A /* LocationManager.swift */; };
 		C9FC16A01DA55A8100600B59 /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FC169F1DA55A8100600B59 /* Calculate.swift */; };
 /* End PBXBuildFile section */
@@ -43,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C90BE1201DAD4D2300BE47D3 /* LocListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocListController.swift; path = ../LocListController.swift; sourceTree = "<group>"; };
 		C9251D871D803C8200339B47 /* Where-am-i.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Where-am-i.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9251D8A1D803C8200339B47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9251D8C1D803C8200339B47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		C98D753B1D8FD19500BC4C35 /* TTSModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTSModule.swift; sourceTree = "<group>"; };
 		C9A0ADE01D8FD38700E36AAC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C9A0ADE21D8FD39A00E36AAC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9AD7D291DAD53F80045A5EE /* LocListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocListController.swift; sourceTree = "<group>"; };
 		C9DBCD351D868ABE0045F32A /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		C9FC169F1DA55A8100600B59 /* Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,7 +130,7 @@
 				C93466B71DA4DB4A00CB33B0 /* WebAccess.swift */,
 				C93466B91DA5076700CB33B0 /* JasonParser.swift */,
 				C9FC169F1DA55A8100600B59 /* Calculate.swift */,
-				C90BE1201DAD4D2300BE47D3 /* LocListController.swift */,
+				C9AD7D291DAD53F80045A5EE /* LocListController.swift */,
 			);
 			path = "Where-am-i";
 			sourceTree = "<group>";
@@ -298,9 +298,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9AD7D2A1DAD53F80045A5EE /* LocListController.swift in Sources */,
 				C93466B81DA4DB4A00CB33B0 /* WebAccess.swift in Sources */,
 				C9FC16A01DA55A8100600B59 /* Calculate.swift in Sources */,
-				C90BE1211DAD4D2300BE47D3 /* LocListController.swift in Sources */,
 				C9251D8D1D803C8200339B47 /* ViewController.swift in Sources */,
 				C9251D8B1D803C8200339B47 /* AppDelegate.swift in Sources */,
 				C9DBCD361D868ABE0045F32A /* LocationManager.swift in Sources */,
