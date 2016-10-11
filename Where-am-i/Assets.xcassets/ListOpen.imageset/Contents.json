@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Google Maps-500.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Drag List Down-100.png",
       "scale" : "2x"
     },
     {

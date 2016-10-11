@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C90BE1211DAD4D2300BE47D3 /* LocListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90BE1201DAD4D2300BE47D3 /* LocListController.swift */; };
 		C9251D8B1D803C8200339B47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9251D8A1D803C8200339B47 /* AppDelegate.swift */; };
 		C9251D8D1D803C8200339B47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9251D8C1D803C8200339B47 /* ViewController.swift */; };
 		C9251D921D803C8200339B47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9251D911D803C8200339B47 /* Assets.xcassets */; };
@@ -14,11 +15,14 @@
 		C9251DAB1D803C8200339B47 /* Where_am_iUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9251DAA1D803C8200339B47 /* Where_am_iUITests.swift */; };
 		C9251DBA1D8044D600339B47 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9251DB91D8044D600339B47 /* MapKit.framework */; };
 		C9251DBC1D8044DF00339B47 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9251DBB1D8044DF00339B47 /* CoreLocation.framework */; };
+		C93466B81DA4DB4A00CB33B0 /* WebAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93466B71DA4DB4A00CB33B0 /* WebAccess.swift */; };
+		C93466BA1DA5076700CB33B0 /* JasonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93466B91DA5076700CB33B0 /* JasonParser.swift */; };
 		C98D4B521D9104C00071676C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98D4B511D9104C00071676C /* AVFoundation.framework */; };
 		C98D753C1D8FD19500BC4C35 /* TTSModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D753B1D8FD19500BC4C35 /* TTSModule.swift */; };
 		C9A0ADE11D8FD38700E36AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0ADE01D8FD38700E36AAC /* Main.storyboard */; };
 		C9A0ADE31D8FD39A00E36AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0ADE21D8FD39A00E36AAC /* LaunchScreen.storyboard */; };
 		C9DBCD361D868ABE0045F32A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DBCD351D868ABE0045F32A /* LocationManager.swift */; };
+		C9FC16A01DA55A8100600B59 /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FC169F1DA55A8100600B59 /* Calculate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C90BE1201DAD4D2300BE47D3 /* LocListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocListController.swift; path = ../LocListController.swift; sourceTree = "<group>"; };
 		C9251D871D803C8200339B47 /* Where-am-i.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Where-am-i.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9251D8A1D803C8200339B47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9251D8C1D803C8200339B47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,11 +57,14 @@
 		C9251DAC1D803C8200339B47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9251DB91D8044D600339B47 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C9251DBB1D8044DF00339B47 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C93466B71DA4DB4A00CB33B0 /* WebAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAccess.swift; sourceTree = "<group>"; };
+		C93466B91DA5076700CB33B0 /* JasonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JasonParser.swift; sourceTree = "<group>"; };
 		C98D4B511D9104C00071676C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C98D753B1D8FD19500BC4C35 /* TTSModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTSModule.swift; sourceTree = "<group>"; };
 		C9A0ADE01D8FD38700E36AAC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C9A0ADE21D8FD39A00E36AAC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9DBCD351D868ABE0045F32A /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C9FC169F1DA55A8100600B59 /* Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,10 @@
 				C9251D961D803C8200339B47 /* Info.plist */,
 				C9DBCD351D868ABE0045F32A /* LocationManager.swift */,
 				C98D753B1D8FD19500BC4C35 /* TTSModule.swift */,
+				C93466B71DA4DB4A00CB33B0 /* WebAccess.swift */,
+				C93466B91DA5076700CB33B0 /* JasonParser.swift */,
+				C9FC169F1DA55A8100600B59 /* Calculate.swift */,
+				C90BE1201DAD4D2300BE47D3 /* LocListController.swift */,
 			);
 			path = "Where-am-i";
 			sourceTree = "<group>";
@@ -286,9 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93466B81DA4DB4A00CB33B0 /* WebAccess.swift in Sources */,
+				C9FC16A01DA55A8100600B59 /* Calculate.swift in Sources */,
+				C90BE1211DAD4D2300BE47D3 /* LocListController.swift in Sources */,
 				C9251D8D1D803C8200339B47 /* ViewController.swift in Sources */,
 				C9251D8B1D803C8200339B47 /* AppDelegate.swift in Sources */,
 				C9DBCD361D868ABE0045F32A /* LocationManager.swift in Sources */,
+				C93466BA1DA5076700CB33B0 /* JasonParser.swift in Sources */,
 				C98D753C1D8FD19500BC4C35 /* TTSModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,7 +20,6 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         locationManager = LocationManager(mapView: mapView, currentLocText: currentLocText)
     }
     
@@ -33,5 +32,7 @@ class ViewController: UIViewController{
         TTSModule.speak(text: currentLocText.text!)
         print(currentLocText.text!)
     }
+    
+    @IBAction func unwindToMainViewController(segue: UIStoryboardSegue) {}
 }
 
