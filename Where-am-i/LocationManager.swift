@@ -15,6 +15,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate{
     var locationManager: CLLocationManager!
     var mapView: MKMapView!
     var currentLocText: UILabel!
+    var locationArray: [String] = []
     
     init(mapView: MKMapView, currentLocText: UILabel) {
         super.init()
@@ -46,6 +47,14 @@ class LocationManager: NSObject, CLLocationManagerDelegate{
             if (placemarks?.count)! > 0 {
                 let pm = (placemarks?[0])! as CLPlacemark
                 self.currentLocText.text = pm.administrativeArea!+" "+pm.locality!+" "+pm.name! // 현재위치를 나타내는 텍스트에 추가
+                let queue = OperationQueue() // 쓰레드 생성해서 웹에서 데이터 받아옴
+                queue.addOperation {
+                    let webAccess = WebAccess(latitude: String(location.coordinate.latitude), longitude: String(location.coordinate.longitude))
+                    let jasonParser = JasonParser()
+                    webAccess.getJasonDataFromURL() // url에서 jason 가져옴
+                    jasonParser.jasonParsing(data: webAccess.getData()) // 가져온 데이터로 파싱
+                    self.locationArray = jasonParser.getParsingResult() // 결과 넣음!
+                }
             }
             else {
                 print("Problem with the data received from geocoder")
@@ -53,7 +62,6 @@ class LocationManager: NSObject, CLLocationManagerDelegate{
         }
       
         let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-        
         // MKCoordinateSpan -- 지도 scale
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta:0.01, longitudeDelta:0.01))
         
